@@ -1,4 +1,5 @@
 import React from 'react';
+import dummyData from '../../dummy-data';
 import Comments from '../Comments/Comments';
 import LikeSection from './LikeSection';
 import PostHeader from './PostHeader';
@@ -23,7 +24,7 @@ const Post = props => {
       {/* Is LikeSection getting all the props it needs to work correctly? */}
       <LikeSection likePost={() => likePost(post.id)} />
       {/* Comments also wants its props! */}
-      <Comments />
+      <Comments data={dummyData}/>
     </div>
   );
 };
