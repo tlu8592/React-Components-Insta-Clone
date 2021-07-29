@@ -20,7 +20,6 @@ const App = () => {
   // To make the search bar work (which is stretch) we'd need another state to hold the search term.
   // console.log(posts);
   const likePost = postId => {
-    console.log('I was called!!!')
     /*
       This function serves the purpose of increasing the number of likes by one, of the post with a given id.
 
@@ -48,8 +47,8 @@ const App = () => {
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
-      <Posts posts={posts} likePost={likePost} />
       <SearchBar />
+      <Posts posts={posts} likePost={likePost} />
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
